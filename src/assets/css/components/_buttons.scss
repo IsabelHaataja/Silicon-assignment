@@ -58,6 +58,7 @@ a.button-circle {
    transition: all 0.15s ease-in-out; 
 }
 
+// button for Contact
 .btn-dropdown {
     position: relative;
     display: inline-block;
@@ -99,20 +100,20 @@ a.button-circle {
     background-color: #ddd;
   }
 
-  footer {
-    padding: 20px 0;
-    .container {
-      text-align: center;
+  // footer {
+  //   padding: 20px 0;
+  //   .container {
+  //     text-align: center;
 
-      .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        font-size: 22px;
-        margin-bottom: 20px;
-      }
+  //     .social-media {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       gap: 15px;
+  //       font-size: 22px;
+  //       margin-bottom: 20px;
+  //     }
 
-    }
+  //   }
 
-  }
+  // }

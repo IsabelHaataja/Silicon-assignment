@@ -1,0 +1,110 @@
+#appfeatures {
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+
+        .brands {
+          display: flex;
+          gap: 2rem; 
+          overflow-x: auto;
+          max-width: 100%;
+          padding-top: 3.5rem;
+          padding-bottom: 3.5rem; 
+  
+          a {
+            text-decoration: none;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 12rem; 
+            height: 6.25rem; 
+            border: 1px solid $gray-300; 
+            padding: 1rem; 
+            border-radius: 0.5rem;
+  
+            img {
+              max-width: 100%; 
+              max-height: 100%;
+            }
+          }
+        }
+      }
+  
+      .content {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+        padding-top: 3.5rem; 
+        padding-bottom: 3.5rem;
+
+        #features-h1 {
+            text-align: left;
+          }
+          
+        #features-p {
+            text-align: left;
+            margin-bottom: 20px; 
+        }
+        
+        .headline {
+            
+        }
+
+        .grid-features {
+            grid-template-columns: 1fr;
+
+            @include lg {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-gap: 20px;
+                max-width: 100%;
+                margin: auto;
+                text-align: left;               
+            }
+            #easy {
+                grid-column: 2/2;
+            }
+
+            #security {
+                grid-column: 3 / -1;
+            }
+
+            #cost {
+                grid-column: 2 / 2;
+                grid-row: 2 / 2;
+            }
+
+            #support {
+                grid-column: 3 /-1;
+            }
+
+            #cashback {
+                grid-column: 2 /2;
+            }
+
+            #support {
+                grid-column: 3 / -1;
+            }
+        }
+      }
+      #features-mobile {
+        width: 25%;
+        padding: 1.25rem 2.5rem;
+        margin-right: auto;
+
+        @include md {
+            padding: 0;
+        }
+      }
+    }
+  }
+  

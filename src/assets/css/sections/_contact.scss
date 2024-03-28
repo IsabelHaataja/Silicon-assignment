@@ -1,0 +1,51 @@
+  .btn-dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 40%;
+    width: 100%;
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+
+  }
+
+  .dropdown-selected {
+    padding: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .dropdown-options {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding: 0 5px;
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  $box-width: 39.75rem; // 636px
+  $box-height: 44.875rem; // 718px
+  .contact-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+    .appointment-button {
+      background-color: blue;
+    }
+    
+    form {
+      padding: o 15px;
+      width: 50%;
+
+    }
+  
