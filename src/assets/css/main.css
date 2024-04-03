@@ -646,7 +646,7 @@ form {
   gap: 2rem;
   overflow-x: auto;
   max-width: 100%;
-  padding-top: 3.5rem;
+  padding-top: 6rem;
   padding-bottom: 3.5rem;
 }
 #appfeatures .container .wrapper .brands a {
@@ -665,20 +665,27 @@ form {
   max-height: 100%;
 }
 #appfeatures .container .content {
-  height: 30vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 1.25rem;
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
-#appfeatures .container .content #features-h1 {
-  text-align: left;
+#appfeatures .container .content .headline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
-#appfeatures .container .content #features-p {
-  text-align: left;
-  margin-bottom: 20px;
+#appfeatures .container .content .headline #features-text {
+  grid-column: 2/-1;
+}
+#appfeatures .container .content .headline #features-text #features-h1 {
+  margin-bottom: 25px;
+}
+#appfeatures .container .content .headline #features-text #features-p {
+  margin-bottom: 30px;
 }
 #appfeatures .container .content .grid-features {
   grid-template-columns: 1fr;
@@ -691,11 +698,13 @@ form {
     grid-gap: 20px;
     max-width: 100%;
     margin: auto;
-    text-align: left;
   }
 }
 #appfeatures .container .content .grid-features #easy {
   grid-column: 2/2;
+}
+#appfeatures .container .content .grid-features #easy img {
+  justify-content: left;
 }
 #appfeatures .container .content .grid-features #security {
   grid-column: 3/-1;
@@ -714,12 +723,104 @@ form {
   grid-column: 3/-1;
 }
 #appfeatures .container #features-mobile {
-  width: 25%;
+  width: 28%;
   padding: 1.25rem 2.5rem;
   margin-right: auto;
+  margin-bottom: 6rem;
 }
 @media (min-width: 768px) {
   #appfeatures .container #features-mobile {
+    padding: 0;
+  }
+}
+
+#how-does-it-work {
+  background: #F3F6FF;
+}
+#how-does-it-work .hdiw-wrapper .content {
+  text-align: center;
+  flex-direction: column;
+}
+#how-does-it-work .hdiw-wrapper .content #hdiw-h1 {
+  padding-bottom: 2rem;
+}
+#how-does-it-work .hdiw-wrapper .content .slide-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#how-does-it-work .hdiw-wrapper .content .slide-show img {
+  max-width: 100%;
+  width: 30%;
+  padding: 0 50px;
+}
+#how-does-it-work .hdiw-wrapper .content #hdiw-h4 {
+  padding-top: 3rem;
+}
+#how-does-it-work .hdiw-wrapper .content #hdiw-p1 {
+  padding-top: 0.7rem;
+}
+#how-does-it-work .hdiw-wrapper .content #hdiw-p2 {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  #money-transfers {
+    padding-top: 40px;
+  }
+}
+#money-transfers .transfers-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "content" "img";
+}
+@media (min-width: 768px) {
+  #money-transfers .transfers-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    grid-template-areas: "content img";
+    gap: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #money-transfers .transfers-wrapper {
+    align-items: center;
+    gap: 100px;
+    padding: 1.25rem 2.5rem;
+  }
+}
+#money-transfers .transfers-wrapper .content {
+  grid-area: content;
+  text-align: center;
+}
+#money-transfers .transfers-wrapper .content p i.fa-regular.fa-circle-check {
+  color: #6366F1;
+  margin-right: 0.5rem;
+}
+@media (min-width: 992px) {
+  #money-transfers .transfers-wrapper .content {
+    text-align: left;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    padding: 0;
+  }
+}
+#money-transfers .transfers-wrapper .content #btn-learn-more {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  margin-right: 420px;
+}
+#money-transfers .transfers-wrapper .content #btn-learn-more i.fa-solid.fa-arrow-right {
+  margin-left: 0.5rem;
+}
+#money-transfers .transfers-wrapper #money-forecast {
+  grid-area: img;
+  align-items: baseline;
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+}
+@media (min-width: 768px) {
+  #money-transfers .transfers-wrapper #money-forecast {
     padding: 0;
   }
 }

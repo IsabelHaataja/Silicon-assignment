@@ -1,0 +1,68 @@
+#money-transfers {
+    @include lg {
+        padding-top: 40px;
+    }
+
+    .transfers-wrapper {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "content" "img";
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+            grid-template-areas: "content img";
+            gap: 50px;
+        }
+
+        @include lg {
+            align-items: center;
+            gap: 100px;
+            padding: 1.25rem 2.5rem;
+        }
+
+        .content {
+            grid-area: content;
+            text-align: center;
+            
+            // padding: 1.25rem;
+            p {
+                i.fa-regular.fa-circle-check {
+                    color: $primary;
+                    margin-right: 0.5rem;
+                }
+            }            
+
+            @include lg {
+                text-align: left;
+                display: grid;
+                grid-template-rows: auto auto 1fr auto;
+                padding: 0;
+            }
+            #btn-learn-more {
+                display: inline-block;
+                // gap: 10px;
+                padding: 0.5rem 0.5rem;
+                margin-right: 420px;
+
+                i.fa-solid.fa-arrow-right {
+                    margin-left: 0.5rem;
+                }
+            }
+
+
+
+        }
+
+        #money-forecast {
+            grid-area: img;
+            align-items: baseline;
+            width: 100%;
+            padding: 1.25rem 2.5rem;
+
+            @include md {
+                padding: 0;
+            }
+        }
+    }
+}

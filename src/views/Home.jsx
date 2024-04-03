@@ -16,6 +16,10 @@ import dataSecurity from '../assets/images/icons/dataSecurity.svg'
 import regularCashback from '../assets/images/icons/regularCashback.svg'
 import support from '../assets/images/icons/support.svg'
 import standards from '../assets/images/icons/topStandards.svg'
+import mobile1 from '../assets/images/mobile/how-does-it-workiPhone.svg'
+import mobile3 from '../assets/images/mobile/how-does-it-work-transfer.svg'
+import mobile2 from '../assets/images/mobile/how-does-it-work-card.svg'
+import moneyForecast from '../assets/images/mobile/moneyForecast.svg'
 
 
 const Home = () => {
@@ -54,8 +58,11 @@ const Home = () => {
         </div>
         <div className='content'>
           <div className='headline'>
-            <h1 id='features-h1'>App Features</h1>
-            <p id='features-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+            <div id='features-text'>
+              <h1 id='features-h1'>App Features</h1>
+              <p id='features-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>              
+            </div>
+
           </div>         
           <div className='grid-features'>
             <div id='easy'>
@@ -92,6 +99,38 @@ const Home = () => {
         </div>
         <img id='features-mobile' src={mobile} alt="A mobile phone showing transactions and Visa-card" />
       </div>
+    </section>
+
+    <section id='how-does-it-work'>
+      <div className='hdiw-wrapper'>
+        <div className='content'>
+          <h1 id='hdiw-h1'>How Does It Work?</h1>
+          <div className='slide-show'>
+            <a id="more-circle-button" className="more button-circle" href="home-discover-more.html"><i className="fa-solid fa-chevron-left"></i></a>
+            <img src={mobile1} alt="" />
+            <img src={mobile2} alt="" />
+            <img src={mobile3} alt="" />
+            <a id="more-circle-button" className="more button-circle" href="home-discover-more.html"><i className="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <h4 id='hdiw-h4'>Step 2. Latest transaction history</h4>
+          <p id='hdiw-p1'>Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique</p>
+          <p id='hdiw-p2'>quisque hac in consectetur condimentum.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='money-transfers'>
+      <div className='transfers-wrapper'>
+        <div className='content'>
+          <h2>Make your money transfer simple and clear</h2>
+          <p><i class="fa-regular fa-circle-check"></i>Banking transactions are free for you</p>
+          <p><i class="fa-regular fa-circle-check"></i>No monthly cash commission</p>
+          <p><i class="fa-regular fa-circle-check"></i>Manage payments and transactions online</p>
+          <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+          <img id='money-forecast' src={moneyForecast} alt="money forecast, send money to people" />
+      </div>          
     </section>      
     </div>
   )
