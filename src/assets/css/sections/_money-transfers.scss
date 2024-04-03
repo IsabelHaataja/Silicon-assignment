@@ -3,15 +3,18 @@
         padding-top: 40px;
     }
 
-    .transfers-wrapper {
+    .content-wrapper {
         display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-areas: "content" "img";
-
+        // min-height: 100vh;
+        // grid-template-columns: auto 1fr;
+        // grid-template-areas:    "transfers" "img1"
+        //                         "img2" "payments";
+        
         @include md {
             grid-template-columns: 1fr 1fr;
             align-items: end;
-            grid-template-areas: "content img";
+            grid-template-areas:    "transfers img1"  
+                                    "img2 payments";
             gap: 50px;
         }
 
@@ -19,19 +22,34 @@
             align-items: center;
             gap: 100px;
             padding: 1.25rem 2.5rem;
+            margin: 0 2.5rem;
         }
 
-        .content {
-            grid-area: content;
-            text-align: center;
-            
-            // padding: 1.25rem;
-            p {
-                i.fa-regular.fa-circle-check {
-                    color: $primary;
-                    margin-right: 0.5rem;
+            .transfers {
+                grid-area: transfers;
+                text-align: left;
+                
+                h2 {
+                    padding-bottom: 1.25rem;
                 }
-            }            
+
+                p {
+                    i.fa-regular.fa-circle-check {
+                        color: $primary;
+                        margin-right: 0.5rem;
+                    }
+                }  
+            }
+
+            .receive-payment {
+                grid-area: payments;
+                text-align: left;
+                .receive-payment-info {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+           
 
             @include lg {
                 text-align: left;
@@ -41,21 +59,29 @@
             }
             #btn-learn-more {
                 display: inline-block;
-                // gap: 10px;
                 padding: 0.5rem 0.5rem;
-                margin-right: 420px;
+                margin-top: 1.25rem;
+                padding: 0.5rem;
 
                 i.fa-solid.fa-arrow-right {
                     margin-left: 0.5rem;
                 }
             }
-
-
-
         }
 
         #money-forecast {
-            grid-area: img;
+            grid-area: img1;
+            align-items: baseline;
+            width: 100%;
+            padding: 1.25rem 2.5rem;
+
+            @include md {
+                padding: 0;
+            }
+        }
+
+        #receive-payments {
+            grid-area: img2;
             align-items: baseline;
             width: 100%;
             padding: 1.25rem 2.5rem;
@@ -65,4 +91,3 @@
             }
         }
     }
-}

@@ -769,58 +769,93 @@ form {
     padding-top: 40px;
   }
 }
-#money-transfers .transfers-wrapper {
+#money-transfers .content-wrapper {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "content" "img";
 }
 @media (min-width: 768px) {
-  #money-transfers .transfers-wrapper {
+  #money-transfers .content-wrapper {
     grid-template-columns: 1fr 1fr;
     align-items: end;
-    grid-template-areas: "content img";
+    grid-template-areas: "transfers img1" "img2 payments";
     gap: 50px;
   }
 }
 @media (min-width: 992px) {
-  #money-transfers .transfers-wrapper {
+  #money-transfers .content-wrapper {
     align-items: center;
     gap: 100px;
     padding: 1.25rem 2.5rem;
+    margin: 0 2.5rem;
   }
 }
-#money-transfers .transfers-wrapper .content {
-  grid-area: content;
-  text-align: center;
+#money-transfers .content-wrapper .transfers {
+  grid-area: transfers;
+  text-align: left;
 }
-#money-transfers .transfers-wrapper .content p i.fa-regular.fa-circle-check {
+#money-transfers .content-wrapper .transfers h2 {
+  padding-bottom: 1.25rem;
+}
+#money-transfers .content-wrapper .transfers p i.fa-regular.fa-circle-check {
   color: #6366F1;
   margin-right: 0.5rem;
 }
+#money-transfers .content-wrapper .receive-payment {
+  grid-area: payments;
+  text-align: left;
+}
+#money-transfers .content-wrapper .receive-payment .receive-payment-info {
+  display: flex;
+  flex-direction: row;
+}
 @media (min-width: 992px) {
-  #money-transfers .transfers-wrapper .content {
+  #money-transfers .content-wrapper {
     text-align: left;
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     padding: 0;
   }
 }
-#money-transfers .transfers-wrapper .content #btn-learn-more {
+#money-transfers .content-wrapper #btn-learn-more {
   display: inline-block;
   padding: 0.5rem 0.5rem;
-  margin-right: 420px;
+  margin-top: 1.25rem;
+  padding: 0.5rem;
 }
-#money-transfers .transfers-wrapper .content #btn-learn-more i.fa-solid.fa-arrow-right {
+#money-transfers .content-wrapper #btn-learn-more i.fa-solid.fa-arrow-right {
   margin-left: 0.5rem;
 }
-#money-transfers .transfers-wrapper #money-forecast {
-  grid-area: img;
+#money-transfers #money-forecast {
+  grid-area: img1;
   align-items: baseline;
   width: 100%;
   padding: 1.25rem 2.5rem;
 }
 @media (min-width: 768px) {
-  #money-transfers .transfers-wrapper #money-forecast {
+  #money-transfers #money-forecast {
     padding: 0;
   }
+}
+#money-transfers #receive-payments {
+  grid-area: img2;
+  align-items: baseline;
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+}
+@media (min-width: 768px) {
+  #money-transfers #receive-payments {
+    padding: 0;
+  }
+}
+
+#client-feedback .feedback-container .flex-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#client-feedback .feedback-container .flex-content .feedback-buttons-left-right {
+  display: flex;
+  gap: 10px;
+  margin-right: 140px;
 }

@@ -20,6 +20,9 @@ import mobile1 from '../assets/images/mobile/how-does-it-workiPhone.svg'
 import mobile3 from '../assets/images/mobile/how-does-it-work-transfer.svg'
 import mobile2 from '../assets/images/mobile/how-does-it-work-card.svg'
 import moneyForecast from '../assets/images/mobile/moneyForecast.svg'
+import receivePayments from '../assets/images/mobile/receivePayment.svg'
+import summers from '../assets/images/feedback/summersFeedback.svg'
+import flores from '../assets/images/feedback/floresFeedback.svg'
 
 
 const Home = () => {
@@ -120,18 +123,49 @@ const Home = () => {
     </section>
 
     <section id='money-transfers'>
-      <div className='transfers-wrapper'>
-        <div className='content'>
-          <h2>Make your money transfer simple and clear</h2>
-          <p><i class="fa-regular fa-circle-check"></i>Banking transactions are free for you</p>
-          <p><i class="fa-regular fa-circle-check"></i>No monthly cash commission</p>
-          <p><i class="fa-regular fa-circle-check"></i>Manage payments and transactions online</p>
-          <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+      <div className='content-wrapper'>
+          <div className='transfers'>
+            <h2>Make your money transfer simple and clear</h2>
+            <p><i class="fa-regular fa-circle-check"></i>Banking transactions are free for you</p>
+            <p><i class="fa-regular fa-circle-check"></i>No monthly cash commission</p>
+            <p><i class="fa-regular fa-circle-check"></i>Manage payments and transactions online</p>
+            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>            
+          </div>
 
-        </div>
+          <div className='receive-payment'>
+            <h2>Receive payment from international bank details</h2>          
+            <div className='receive-payment-info'>
+              <div className='manage-online'>
+                <img src={easy} alt="card icon" /> 
+                <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>               
+              </div>
+              <div className='cashback'>
+                <img src={regularCashback} alt="wallet icon" />
+                <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>                
+              </div>
+            </div>
+            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>          
+          </div>
           <img id='money-forecast' src={moneyForecast} alt="money forecast, send money to people" />
+          <img id='receive-payments' src={receivePayments} alt="contacts listed and a Visa-card" />  
       </div>          
-    </section>      
+    </section>   
+
+    <section id='client-feedback'>
+      <div className='feedback-container'>
+        <div className='flex-content'>
+          <div className='feedback-buttons-left-right'>
+            <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-left"></i></a>
+            <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-right"></i></a>            
+          </div>
+          <div className='reviews'>
+            <img src={summers} alt="" />
+            <img src={flores} alt="" />          
+          </div>          
+        </div>
+          <h1>Clients are Loving Our App</h1>          
+      </div>
+    </section>   
     </div>
   )
 }
