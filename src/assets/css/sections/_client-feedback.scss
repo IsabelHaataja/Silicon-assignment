@@ -1,16 +1,22 @@
 #client-feedback {
+    background: $gradient-background;
     .feedback-container {
-        .flex-content {
+        .feedback-content {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+            gap: 1.25rem;
+            padding: 1.25rem;
 
             .feedback-buttons-left-right {
                 display: flex;
-                gap: 10px;
+                gap: 1.25rem;
                 margin-right: 140px;
+                margin-top: 3rem;
+            }
+
+            .reviews {
+                display: flex;
+                flex-direction: row;
             }
             
         }

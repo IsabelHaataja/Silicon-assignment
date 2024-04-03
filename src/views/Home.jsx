@@ -23,6 +23,9 @@ import moneyForecast from '../assets/images/mobile/moneyForecast.svg'
 import receivePayments from '../assets/images/mobile/receivePayment.svg'
 import summers from '../assets/images/feedback/summersFeedback.svg'
 import flores from '../assets/images/feedback/floresFeedback.svg'
+import phone from '../assets/images/icons/phone-icon.svg'
+import chat from '../assets/images/icons/chat-icon.svg'
+import bell from '../assets/images/icons/notificationBell.svg'
 
 
 const Home = () => {
@@ -125,11 +128,11 @@ const Home = () => {
     <section id='money-transfers'>
       <div className='content-wrapper'>
           <div className='transfers'>
-            <h2>Make your money transfer simple and clear</h2>
-            <p><i class="fa-regular fa-circle-check"></i>Banking transactions are free for you</p>
-            <p><i class="fa-regular fa-circle-check"></i>No monthly cash commission</p>
-            <p><i class="fa-regular fa-circle-check"></i>Manage payments and transactions online</p>
-            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>            
+            <h2>Make your money <br />transfer simple and clear</h2>
+            <p><i className="fa-regular fa-circle-check"></i>Banking transactions are free for you</p>
+            <p><i className="fa-regular fa-circle-check"></i>No monthly cash commission</p>
+            <p><i className="fa-regular fa-circle-check"></i>Manage payments and transactions online</p>
+            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i className="fa-solid fa-arrow-right"></i></a>            
           </div>
 
           <div className='receive-payment'>
@@ -144,7 +147,7 @@ const Home = () => {
                 <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>                
               </div>
             </div>
-            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>          
+            <a id="btn-learn-more" className="btn btn-theme" href="#">Learn more<i className="fa-solid fa-arrow-right"></i></a>          
           </div>
           <img id='money-forecast' src={moneyForecast} alt="money forecast, send money to people" />
           <img id='receive-payments' src={receivePayments} alt="contacts listed and a Visa-card" />  
@@ -152,20 +155,75 @@ const Home = () => {
     </section>   
 
     <section id='client-feedback'>
-      <div className='feedback-container'>
-        <div className='flex-content'>
-          <div className='feedback-buttons-left-right'>
-            <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-left"></i></a>
-            <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-right"></i></a>            
+      <div className='feedback-container'> 
+        <div className='feedback-content'>
+          <div>
+            <h1>Clients are Loving Our App</h1>
+            <div className='feedback-buttons-left-right'>
+              <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-left"></i></a>
+              <a className="more button-circle" href="#"><i className="fa-solid fa-chevron-right"></i></a>            
+            </div>            
           </div>
           <div className='reviews'>
             <img src={summers} alt="" />
             <img src={flores} alt="" />          
           </div>          
         </div>
-          <h1>Clients are Loving Our App</h1>          
       </div>
-    </section>   
+    </section> 
+
+    <section id='questions'>
+      <div className='questions-container'>
+        <div className='questions-wrapper'>
+          <div className='prompt'>
+            <h2>Any questions? <br />Check out the FAQs</h2>
+            <p>Still have unanswered questions and need to get <br /> in touch?</p>
+            <div className='contact-choices'>
+              <div id='contact-call'>
+                <img src={phone} alt="call icon" />
+                <p>Still have questions?</p>
+                <a href="#">Contact us <i className="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div id='contact-chat'>
+                <img src={chat} alt="chat icon" />
+                <p>Dont't like phone calls?</p>
+                <a href="#">Contact us <i className="fa-solid fa-arrow-right"></i></a>
+              </div>              
+            </div>
+          </div>
+
+          <div className='faqs'>
+            <nav>Is any of my personal information stored in the App?<a id="faqs-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-down"></i></a></nav>
+            <nav>What formats can I download my transaction history in?<a id="faqs-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-down"></i></a></nav>
+            <nav>
+              <div id='open-faqs-bar'>
+                <div id='top-row'>Can I schedule future transfers?
+                <a id="faqs-open-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-up"></i></a>
+                </div>
+                <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>                
+              </div>
+            </nav>
+            <nav>When can I use Banking App services?<a id="faqs-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-down"></i></a></nav>
+            <nav>Can I create my own password that is easy for me to remember?<a id="faqs-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-down"></i></a></nav>
+            <nav>What happens if I forget or lose my password?<a id="faqs-circle-button" className="more button-circle" href="#"><i className="fa-solid fa-chevron-down"></i></a></nav>          
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <section id='subscribe'>
+      <div className='subscribe-wrapper'>
+        <div className='subscribe-content'>
+          <img src={bell} alt="bell" />
+          <h4>Subscribe to our newsletter to stay <br />informed about latest updates</h4>
+          <form action="">
+            <div className='input-group'>
+              <input type="text" placeholder='Your Email'/>
+            </div>
+          </form>          
+        </div>
+      </div>
+    </section>
     </div>
   )
 }

@@ -847,15 +847,141 @@ form {
   }
 }
 
-#client-feedback .feedback-container .flex-content {
+#client-feedback {
+  background: linear-gradient(-1deg, rgba(99, 101, 241, 0.1) 0%, rgba(216, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 75%);
+}
+#client-feedback .feedback-container .feedback-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+#client-feedback .feedback-container .feedback-content .feedback-buttons-left-right {
+  display: flex;
+  gap: 1.25rem;
+  margin-right: 140px;
+  margin-top: 3rem;
+}
+#client-feedback .feedback-container .feedback-content .reviews {
+  display: flex;
+  flex-direction: row;
+}
+
+#questions .questions-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  margin: 2rem;
 }
-#client-feedback .feedback-container .flex-content .feedback-buttons-left-right {
+#questions .questions-container .questions-wrapper {
+  margin-top: 3rem;
   display: flex;
-  gap: 10px;
-  margin-right: 140px;
+  gap: 3rem;
+}
+#questions .questions-container .questions-wrapper .prompt {
+  display: flex;
+  flex-direction: column;
+}
+#questions .questions-container .questions-wrapper .prompt h2 {
+  color: #0B0F19;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices #contact-call {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.25rem;
+  height: 10.375;
+  border: 1px solid #E2E5F1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices #contact-call p {
+  margin-top: 0.5rem;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices #contact-chat {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.25rem;
+  height: 10.375;
+  border: 1px solid #E2E5F1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices #contact-chat p {
+  margin-top: 0.5rem;
+}
+#questions .questions-container .questions-wrapper .prompt .contact-choices #contact-chat a {
+  color: #22C55E;
+}
+#questions .questions-container .questions-wrapper .faqs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#questions .questions-container .questions-wrapper .faqs nav {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: #33354D;
+  font-weight: 600 !important;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 46.625rem;
+  border: 1px solid #E2E5F1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+#questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar {
+  height: 11.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  margin-top: 1.5rem;
+}
+#questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar #top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 26.5rem;
+}
+#questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar #top-row #faqs-open-circle-button {
+  background-color: #6366F1;
+}
+#questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar #top-row #faqs-open-circle-button #i, #questions .questions-container .questions-wrapper .faqs nav #open-faqs-bar #top-row #faqs-open-circle-button .fa-solid.fa-chevron-up {
+  color: #FFFFFF;
+}
+#questions .questions-container .questions-wrapper .faqs nav a,
+#questions .questions-container .questions-wrapper .faqs nav #faqs-circle-button {
+  background-color: #F3F6FF;
 }
