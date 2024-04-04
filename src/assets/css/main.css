@@ -501,6 +501,43 @@ header .container #btn-menu {
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 1.5rem;
+}
+.container #silicon-logo {
+  width: 15%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container .menu-links {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: #33354D;
+  font-weight: 600 !important;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.container .download-app {
+  margin-bottom: 4rem;
+}
+.container .download-app a {
+  margin: 1.5rem;
+}
+.container #socials {
+  margin-bottom: 4rem;
+}
+
 #showcase {
   background: linear-gradient(-1deg, rgba(99, 101, 241, 0.1) 0%, rgba(216, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 75%);
 }
@@ -1015,29 +1052,32 @@ header .container #btn-menu {
 }
 
 #subscribe {
-  background: linear-gradient(-1deg, rgba(99, 101, 241, 0.1) 0%, rgba(216, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 75%);
+  background: #F3F6FF;
 }
 #subscribe .subscribe-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 5rem;
 }
-#subscribe .subscribe-wrapper .input-group {
+#subscribe .subscribe-wrapper #email-bar {
+  width: 60dvh;
+}
+#subscribe .subscribe-wrapper #email-bar .input-group {
   position: relative;
   margin-top: 1.5rem;
 }
-#subscribe .subscribe-wrapper .input-group input[type=text] {
-  padding-right: 40px;
+#subscribe .subscribe-wrapper #email-bar .input-group input[type=text] {
+  padding-right: 80px;
 }
-#subscribe .subscribe-wrapper .input-group #subscribe-button {
+#subscribe .subscribe-wrapper #email-bar .input-group #subscribe-button {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  padding: o 10px;
+  padding: 0 10px;
 }
 
 #medical-contact {
@@ -1073,4 +1113,64 @@ header .container #btn-menu {
 #medical-contact .medical-info #flex-medical .medical1 i.fa-solid.fa-clock, #medical-contact .medical-info #flex-medical .medical2 i.fa-solid.fa-clock {
   margin-right: 0.5rem;
   color: #6366F1;
+}
+
+#footer {
+  background: #0B0F19;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+#footer .footer-container1 {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer-container1 #silicon-logo {
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+#footer .footer-container1 h5 {
+  color: #FFFFFF;
+}
+#footer .footer-container1 #newsletter-bar .input-group {
+  position: relative;
+  margin-top: 1.5rem;
+}
+#footer .footer-container1 #newsletter-bar .input-group input[type=text] {
+  padding-right: 80px;
+}
+#footer .footer-container1 #newsletter-bar .input-group label {
+  color: #FFFFFF;
+}
+#footer .footer-container1 #newsletter-bar .input-group #subscribe-button {
+  position: absolute;
+  top: 28.5px;
+  right: 0;
+  height: 67.4%;
+  padding: 30 0.5rem;
+}
+#footer #navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 4rem;
+}
+#footer #social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: #33354D;
+  font-weight: 600 !important;
+}
+#footer #contact {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }

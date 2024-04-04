@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 1.5rem;
+    
+    #silicon-logo {
+        width: 15%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-links {
+        @include text-nav;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .download-app {
+        a{
+            margin: 1.5rem; 
+        }
+        margin-bottom: 4rem;
+    }
+
+    #socials {
+        margin-bottom: 4rem;
+    }
+    
+}

@@ -5,6 +5,7 @@ import email from '../assets/images/icons/email-icon.svg'
 import career from '../assets/images/icons/careers-icon.svg'
 import map from '../assets/images/maps/map.svg'
 import socials from '../assets/images/icons/socials.svg'
+import Footer from './components/FooterDark'
 
 
 const Contact = () => {
@@ -127,9 +128,9 @@ const Contact = () => {
             </div>
 
           </div>
-        </section>     
+        </section>  
+        <Footer />   
     </div>
-
     </>
   )
 }

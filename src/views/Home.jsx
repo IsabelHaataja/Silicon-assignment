@@ -26,6 +26,7 @@ import flores from '../assets/images/feedback/floresFeedback.svg'
 import phone from '../assets/images/icons/phone-icon.svg'
 import chat from '../assets/images/icons/chat-icon.svg'
 import bell from '../assets/images/icons/notificationBell.svg'
+import Footer from './sections/FooterSection'
 
 
 const Home = () => {
@@ -215,15 +216,15 @@ const Home = () => {
       <div className='subscribe-wrapper'>
           <img src={bell} alt="bell" />
           <h4>Subscribe to our newsletter to stay <br />informed about latest updates</h4>
-          <form action="">
+          <form id='email-bar' action="">
             <div className='input-group'>
               <input type="text" name='email' placeholder='Your Email'/>
               <button id='subscribe-button' className='btn-theme'>Subscribe</button>
-              
             </div>
           </form>          
       </div>
     </section>
+    <Footer />
     </div>
   )
 }
