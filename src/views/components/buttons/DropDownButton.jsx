@@ -9,9 +9,9 @@ const DropDownButton = ({options, useIcon = false}) => {
         setIsOpen(false);
     };
 
-    // useEffect(() => {
-    //     setSelectedOption(options[0]?.text)
-    // }, [options])
+    useEffect(() => {
+        setSelectedOption(options[0]?.text)
+    }, [options])
 
 
     return (

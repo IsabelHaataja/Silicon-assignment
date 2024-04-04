@@ -1,51 +1,82 @@
-  .btn-dropdown {
-    position: relative;
-    display: inline-block;
-    min-width: 40%;
-    width: 100%;
-  }
-  
-  .dropdown-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: -1;
-
-  }
-
-  .dropdown-selected {
-    padding: 15px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
-  .dropdown-options {
-    position: absolute;
-    width: 100%;
-    list-style: none;
-    padding: 0 5px;
-    margin: 0;
-    border: 1px solid #ccc;
-    z-index: 1000;
-    background-color: white;
-  }
-
-  $box-width: 39.75rem; // 636px
-  $box-height: 44.875rem; // 718px
-  .contact-container {
-   
+.wrapper {
+  background: $gray-100;
+  #contact {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
+    padding: 1.5rem;
+
+    .contact-content {
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 0.5rem;
+
+        i.fa-solid.fa-house {
+          margin-right: 0.5rem;
+        }
+      }
+      .flex-contact-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .contact-us {
+          display: flex;
+          flex-direction: column;
+
+          #contact-h1 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+          }
+
+          #career,#email {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            img {
+              align-self: flex-start;
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        #contact-form {
+          $box-width: 39.75rem; // 636px
+          $box-height: 44.875rem; // 718px
+          background-color: $white;
+          padding: 3rem;
+          border-radius: 0.5rem;
+          @include shadow-l
+
+          ;input-group,h2 {
+            margin-bottom: 2rem ;
+          }
+        }
+      }
+      .date-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+      }
+    }
     .appointment-button {
-      background-color: blue;
+      width: 200px;
     }
     
     form {
-      padding: o 15px;
+      padding: 0 15px;
       width: 50%;
 
-    }
+    } 
+  }
+   
+}
+
+
   

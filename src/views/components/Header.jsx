@@ -7,7 +7,7 @@ const Header = () => {
     <header>
         <div className="container">
         {/* <img src={reqi} alt="Silicon logo" /> */}
-            <a id="logo" href="home.html"><img src={siliconLogo}></img></a>
+            <a id="logo" href="/"><img src={siliconLogo}></img></a>
 
             <nav id="menu">
                 <div className="menu-links">

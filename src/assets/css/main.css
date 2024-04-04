@@ -281,8 +281,10 @@ a.button-circle {
 
 .dropdown-selected {
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #D4D7E5;
   cursor: pointer;
+  border-radius: 0.5rem;
+  height: 3.5rem;
 }
 
 .dropdown-options {
@@ -291,9 +293,10 @@ a.button-circle {
   list-style: none;
   padding: 0 5px;
   margin: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #D4D7E5;
   z-index: 1000;
   background-color: white;
+  border-radius: 5px;
 }
 
 .dropdown-option {
@@ -318,7 +321,13 @@ form .input-group input {
   width: 100%;
   padding: 15px;
   border-radius: 8px !important;
-  border: 1px solid #565973;
+  border: 1px solid #D4D7E5;
+}
+form .input-group input::-moz-placeholder {
+  color: #D4D7E5;
+}
+form .input-group input::placeholder {
+  color: #D4D7E5;
 }
 form .checkbox-group {
   padding: 10px 0 20px 0;
@@ -584,50 +593,69 @@ header .container #btn-menu {
   }
 }
 
-.btn-dropdown {
-  position: relative;
-  display: inline-block;
-  min-width: 40%;
-  width: 100%;
+.wrapper {
+  background: #F3F6FF;
 }
-
-.dropdown-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: -1;
-}
-
-.dropdown-selected {
-  padding: 15px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.dropdown-options {
-  position: absolute;
-  width: 100%;
-  list-style: none;
-  padding: 0 5px;
-  margin: 0;
-  border: 1px solid #ccc;
-  z-index: 1000;
-  background-color: white;
-}
-
-.contact-container {
+.wrapper #contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 1.5rem;
 }
-
-.appointment-button {
-  background-color: blue;
+.wrapper #contact .contact-content .navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
 }
-
-form {
-  padding: o 15px;
+.wrapper #contact .contact-content .navigation i.fa-solid.fa-house {
+  margin-right: 0.5rem;
+}
+.wrapper #contact .contact-content .flex-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper #contact .contact-content .flex-contact-content .contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper #contact .contact-content .flex-contact-content .contact-us #contact-h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.wrapper #contact .contact-content .flex-contact-content .contact-us #career, .wrapper #contact .contact-content .flex-contact-content .contact-us #email {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper #contact .contact-content .flex-contact-content .contact-us #career img, .wrapper #contact .contact-content .flex-contact-content .contact-us #email img {
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+.wrapper #contact .contact-content .flex-contact-content #contact-form {
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+}
+.wrapper #contact .contact-content .flex-contact-content #contact-form input-group, .wrapper #contact .contact-content .flex-contact-content #contact-form h2 {
+  margin-bottom: 2rem;
+}
+.wrapper #contact .contact-content .date-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+.wrapper #contact .appointment-button {
+  width: 200px;
+}
+.wrapper #contact form {
+  padding: 0 15px;
   width: 50%;
 }
 
@@ -984,4 +1012,30 @@ form {
 #questions .questions-container .questions-wrapper .faqs nav a,
 #questions .questions-container .questions-wrapper .faqs nav #faqs-circle-button {
   background-color: #F3F6FF;
+}
+
+#subscribe {
+  background: linear-gradient(-1deg, rgba(99, 101, 241, 0.1) 0%, rgba(216, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 75%);
+}
+#subscribe .subscribe-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+#subscribe .subscribe-wrapper .input-group {
+  position: relative;
+  margin-top: 1.5rem;
+}
+#subscribe .subscribe-wrapper .input-group input[type=text] {
+  padding-right: 40px;
+}
+#subscribe .subscribe-wrapper .input-group #subscribe-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: o 10px;
 }

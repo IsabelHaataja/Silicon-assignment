@@ -213,15 +213,15 @@ const Home = () => {
 
     <section id='subscribe'>
       <div className='subscribe-wrapper'>
-        <div className='subscribe-content'>
           <img src={bell} alt="bell" />
           <h4>Subscribe to our newsletter to stay <br />informed about latest updates</h4>
           <form action="">
             <div className='input-group'>
-              <input type="text" placeholder='Your Email'/>
+              <input type="text" name='email' placeholder='Your Email'/>
+              <button id='subscribe-button' className='btn-theme'>Subscribe</button>
+              
             </div>
           </form>          
-        </div>
       </div>
     </section>
     </div>
