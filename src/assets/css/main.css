@@ -1039,3 +1039,38 @@ header .container #btn-menu {
   height: 100%;
   padding: o 10px;
 }
+
+#medical-contact {
+  display: flex;
+  height: 100%;
+  padding: 1.5rem;
+}
+#medical-contact .medical-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#medical-contact .medical-info img {
+  width: 50%;
+  margin-right: 6rem;
+}
+#medical-contact .medical-info #flex-medical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#medical-contact .medical-info #flex-medical .medical1 h3, #medical-contact .medical-info #flex-medical .medical2 h3 {
+  margin-bottom: 2rem;
+}
+#medical-contact .medical-info #flex-medical .medical1 i.fa-solid.fa-location-pin, #medical-contact .medical-info #flex-medical .medical2 i.fa-solid.fa-location-pin {
+  margin-right: 0.5rem;
+  color: #6366F1;
+}
+#medical-contact .medical-info #flex-medical .medical1 i.fa-solid.fa-phone, #medical-contact .medical-info #flex-medical .medical2 i.fa-solid.fa-phone {
+  margin-right: 0.5rem;
+  color: #6366F1;
+}
+#medical-contact .medical-info #flex-medical .medical1 i.fa-solid.fa-clock, #medical-contact .medical-info #flex-medical .medical2 i.fa-solid.fa-clock {
+  margin-right: 0.5rem;
+  color: #6366F1;
+}

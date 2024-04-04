@@ -3,6 +3,8 @@ import Header from './components/Header'
 import DropDownButton from './components/buttons/DropDownButton'
 import email from '../assets/images/icons/email-icon.svg'
 import career from '../assets/images/icons/careers-icon.svg'
+import map from '../assets/images/maps/map.svg'
+import socials from '../assets/images/icons/socials.svg'
 
 
 const Contact = () => {
@@ -101,7 +103,31 @@ const Contact = () => {
                 </form>                 
               </div>
             </div>      
-        </section>      
+        </section> 
+
+        <section id='medical-contact'>
+          <div className='medical-info'>
+            <img src={map} alt="map showing two medical centers" />
+            <div id='flex-medical'>
+              <div className='medical1'>
+                <h3>Medical Center 1</h3>
+                <p><i className="fa-solid fa-location-pin"></i>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p><i className="fa-solid fa-phone"></i>(406) 555-0120</p>
+                <p><i className="fa-solid fa-clock"></i>Mon - Fri: 9:00 am - 22:00 am<br />Sat - Sun: 9:00 am - 20:00 am</p>
+              </div>
+              <div className='medical2'>
+                <h3>Medical Center 2</h3>
+                <p><i className="fa-solid fa-location-pin"></i>2464 Royal Ln. Mesa,New Jersey 45463</p>
+                <p><i className="fa-solid fa-phone"></i>(406) 544-0123</p>
+                <p><i className="fa-solid fa-clock"></i>Mon - Fri: 9:00 am - 22:00 am<br />Sat - Sun: 9:00 am - 20:00 am</p>
+              </div>
+              <div className='socials'>
+                <img src={socials} alt="facebook, instagram, twitter and youtube icons" />
+              </div>
+            </div>
+
+          </div>
+        </section>     
     </div>
 
     </>
