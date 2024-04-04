@@ -1131,6 +1131,9 @@ header .container #btn-menu {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
+#footer .footer-container1 #footer-p {
+  color: #FFFFFF;
+}
 #footer .footer-container1 h5 {
   color: #FFFFFF;
 }
@@ -1151,13 +1154,10 @@ header .container #btn-menu {
   height: 67.4%;
   padding: 30 0.5rem;
 }
-#footer #navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 4rem;
+#footer .footer-container1 #rights {
+  margin-top: 5rem;
 }
-#footer #social-media {
+#footer #social-media, #footer #contact, #footer #navigation {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1168,9 +1168,18 @@ header .container #btn-menu {
   font-size: 16px;
   color: #33354D;
   font-weight: 600 !important;
+  margin-top: 3rem;
+  row-gap: 0.5rem;
+  margin-left: 3rem;
 }
-#footer #contact {
+#footer #social-media #example-email, #footer #contact #example-email, #footer #navigation #example-email {
+  color: #6366F1;
+}
+#footer #social-media #terms-privacy, #footer #contact #terms-privacy, #footer #navigation #terms-privacy {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  margin-top: 5rem;
+}
+#footer #social-media a, #footer #contact a, #footer #navigation a {
+  color: #FFFFFF;
 }

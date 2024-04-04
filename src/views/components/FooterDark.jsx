@@ -8,7 +8,7 @@ const FooterDark = () => {
         <div id='footer'>
             <div className='footer-container1'> 
                 <img id='silicon-logo' src={siliconLogo} alt="silicon logo" />
-                <p>Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. </p>
+                <p id='footer-p'>Proin ipsum pharetra, senectus eget scelerisque varius pretium <br /> platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. <br /> Non feugiat feugiat egestas nulla nec. Arcu tempus, eget <br /> elementum dolor ullamcorper sodales ultrices eros. </p>
                 <form id='newsletter-bar' action="">
                     <div className='input-group'> 
                         <label>Subscribe to our newsletter</label>            
@@ -16,7 +16,7 @@ const FooterDark = () => {
                         <button id='subscribe-button' className='btn-theme'>Subscribe</button>
                     </div>
                 </form> 
-                <div><p>2024. All rights reserved. Silicon Template</p></div>
+                <div id='rights'><p>2024. All rights reserved. Silicon Template</p></div>
             </div> 
             <div id='navigation'>
                 <a href="/">Home</a>
@@ -25,8 +25,11 @@ const FooterDark = () => {
                 <a href="#">Testimonials</a>
                 <a href="#">News</a>
 
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
+                <div id='terms-privacy'>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>                    
+                </div>
+
             </div>
             <nav id='social-media'>
                 <a href="#">Facebook</a>
@@ -36,7 +39,7 @@ const FooterDark = () => {
             </nav>
             <div id='contact'>
                 <a href="/contact">Contact Us</a>
-                <a href="#">example@gmail.com</a>
+                <a id='example-email' href="#">example@gmail.com</a>
             </div>
         </div>
     </footer>
