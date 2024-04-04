@@ -37,13 +37,41 @@ const Contact = () => {
   }, [])
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.fullName]: e.target.value })
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const isValidFullName = (fullName) => {
+    // Split the full name into parts
+    const nameParts = fullName.trim().split(" ");
+  
+    // Check if there are exactly two parts
+    return nameParts.length === 2;
+  };
+
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    console.log(formData)
+    if (!formData.fullName.trim() || !isValidFullName(formData.fullName)) {
+      alert("Please enter your full name.")
+      return
+    }
+
+    if (!formData.emailAddress.trim()) {
+      alert("Please enter your email address.")
+      return
+    }
+
+    if (!isValidEmail(formData.emailAddress)) {
+      alert("Please enter a valid email address.");
+      return
+    }
+
+    console.log("Form data:", formData)
 
     setFormData({
       fullName: '',
